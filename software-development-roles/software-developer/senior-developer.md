@@ -5,7 +5,7 @@
 **Closing Date:** [Insert Date]  
 **Interviews:** Expected w/c [Insert Week]
 
-**Grade:** G6  
+**Grade:** G7  
 (MoJ candidates who are on a specialist grade will be able to retain this grade on lateral transfer)
 
 **Salary:**   
@@ -55,7 +55,7 @@ We’re recruiting for Senior Software Developers here at Justice Digital, to jo
   - Monitoring: Sentry
   - Containerization: Kubernetes, Docker
   - Cloud Infrastructure: AWS
-  - Web Interfaces: GOV.UK Design System
+  - Web Interfaces: GOV.UK and MoJ Design Systems
   
 - **Front-End Development:**
   We value a deep understanding of web technologies, emphasizing semantic HTML, performant CSS, and JavaScript or TypeScript. Accessibility is a core consideration across all our services.
