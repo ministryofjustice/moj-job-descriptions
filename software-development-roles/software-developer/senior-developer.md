@@ -23,7 +23,7 @@ National: £[Insert Amount]
 ## The Role:
 
 
-**This role aligns against ‘  [ROLE]’ from the Government Digital and Data Framework**
+**This role aligns against ‘[Senior Software Developer](https://ddat-capability-framework.service.gov.uk/role/software-developer#senior-developer)’ from the Government Digital and Data Framework**
 
 We’re recruiting for Senior Software Developers here at Justice Digital, to join one of our dynamic and collaborative teams.
 
