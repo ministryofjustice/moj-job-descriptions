@@ -44,9 +44,9 @@ jobs:
         env:
           target: "job-descriptions.zip"
           source: "."
-          exclude: ".git*"
+          include: '-i "*roles*"'
         run: |
-          zip -vr ${{ env.target }} ${{ env.source }} -x "${{ env.exclude }}"
+          zip -vrX ${{ env.target }} ${{ env.source }} ${{ env.include }}
           echo "artifact=${{ env.target }}" >> $GITHUB_OUPUT
       - name: "Create a release"
         id: create_release
