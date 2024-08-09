@@ -56,7 +56,7 @@ jobs:
           tag: ${{ needs.setup.outputs.semver_tag }}
           name: ${{ needs.setup.outputs.semver_tag }}
           draft: false
-          prerelease: false
+          prerelease: true
           artifacts: '${{ steps.zip.outputs.artifact }}'
 
 

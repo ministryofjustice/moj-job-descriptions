@@ -26,7 +26,7 @@ jobs:
         id: semver_tag
         uses: ministryofjustice/opg-github-actions/.github/actions/semver-tag@v3.0.6
         with:
-          prerelease: true
+          prerelease: false
           releases_enabled: false
   # do the release
   release:
@@ -56,7 +56,7 @@ jobs:
           tag: ${{ needs.setup.outputs.semver_tag }}
           name: ${{ needs.setup.outputs.semver_tag }}
           draft: false
-          prerelease: true
+          prerelease: false
           artifacts: '${{ steps.zip.outputs.artifact }}'
 
 
