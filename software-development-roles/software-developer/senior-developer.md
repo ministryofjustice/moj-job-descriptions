@@ -111,12 +111,15 @@ If this feels like an exciting opportunity, something you are enthusiastic about
 ## Person Specification
 
 Essential
--   You have a strong grounding in user-centred design, and have experience working on multiple or highly complex services. You know how to give direction on which tools or methods to use and how to bring agile delivery teams along with you.
--   You know what good public services look like and how to design in an inclusive, accessible way. You can set design standards and coach others.
--   Having worked as a designer, you can create high-quality, compelling design concepts and artefacts. You are experienced in rapid paper and digital prototyping, and understand security, accessibility, version control and hosting.
--   You advocate for end to end service design at a strategic level, agnostic of teams, departments and organisations.
--   You are passionate about growing talent and developing design culture. You have experience of managing designers and coordinating communities of practice.
--   You can interpret the needs of senior leaders and stakeholders. You use design thinking to help solve complex organisational challenges and influence strategy.
+- Demonstrate proven experience of delivering large and complex software solutions
+- Demonstrate proven experience working in a modern object oriented language and be confident learning new languages
+- Apply modern development and deployment techniques to your work, including continuous integration and continuous delivery
+- Support a culture of software maintenance, clean code, coding standards and practices that make change and consistency easier
+- Write automated tests to continuously validate your work
+- Thrive when you work as part of a team that abides by the spirit of the manifesto of agile software development
+- Enjoy sharing knowledge and working in a multi-disciplinary team
+- Hold yourself and others to a high standard
+- Solve problems in a systematic and innovative way
     
 Willingness to be assessed against [the requirements](https://www.gov.uk/government/publications/united-kingdom-security-vetting-clearance-levels/national-security-vetting-clearance-levels) for BPSS clearance
 
@@ -130,6 +133,7 @@ Candidates must submit a CV and an optional Statement of Suitability (up to 750 
 
 In Justice Digital, we recruit using a combination of the Digital, Data and Technology Capability and Success Profiles Frameworks. We will assess your Experience, Technical Skills and the following Behaviours during the assessment process:
 
+- Communicating and influencing
 - Working Together
 - Developing Self and Others
 - Making Effective Decisions
