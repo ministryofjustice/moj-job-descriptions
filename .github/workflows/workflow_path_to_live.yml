@@ -47,7 +47,7 @@ jobs:
           include: '-i "*roles*"'
         run: |
           zip -vrX ${{ env.target }} ${{ env.source }} ${{ env.include }}
-          echo "artifact=${{ env.target }}" >> $GITHUB_OUPUT
+          echo "artifact=${{ env.target }}" >> $GITHUB_OUTPUT
       - name: "Create a release"
         id: create_release
         uses: ncipollo/release-action@v1.13.0
