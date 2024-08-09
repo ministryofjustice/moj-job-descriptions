@@ -1,0 +1,82 @@
+name: "[Workflow] Pull Request"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  # setup series of variables
+  setup:
+    name: "Setup"
+    runs-on: ubuntu-latest
+    outputs:
+      branch_name: ${{ steps.semver_tag.outputs.branch_safe }}
+      semver_tag: ${{ steps.semver_tag.outputs.created_tag }}
+    steps:
+      # Check the code base
+      - name: "Checkout"
+        id: checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+      # Generate a semver tag for this workflow
+      - name: "Generate semver tag"
+        id: semver_tag
+        uses: ministryofjustice/opg-github-actions/.github/actions/semver-tag@v3.0.6
+        with:
+          prerelease: true
+          releases_enabled: false
+  # do the release
+  release:
+    name: "Create release"
+    needs: [setup]
+    runs-on: ubuntu-latest
+    outputs:
+      artifact: ${{ steps.zip.outputs.artifact }}
+    steps:
+      - name: "Checkout"
+        id: checkout
+        uses: actions/checkout@v4
+      - name: "Zip descriptions"
+        id: "zip"
+        env:
+          target: "job-descriptions.zip"
+          source: "."
+          include: '-i "*roles*"'
+        run: |
+          zip -vrX ${{ env.target }} ${{ env.source }} ${{ env.include }}
+          echo "artifact=${{ env.target }}" >> $GITHUB_OUTPUT
+      - name: "Create a release"
+        id: create_release
+        uses: ncipollo/release-action@v1.13.0
+        with:
+          generateReleaseNotes: false
+          tag: ${{ needs.setup.outputs.semver_tag }}
+          name: ${{ needs.setup.outputs.semver_tag }}
+          draft: false
+          prerelease: true
+          artifacts: '${{ steps.zip.outputs.artifact }}'
+
+
+  end:
+    name: "Workflow summary"
+    if: always()
+    needs: [setup, release]
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Git"
+        run: |
+          echo "### Git info" >> $GITHUB_STEP_SUMMARY
+          echo "| Variable | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |"  >> $GITHUB_STEP_SUMMARY
+          echo "| Branch | ${{ needs.setup.outputs.branch_name }} |"  >> $GITHUB_STEP_SUMMARY
+          echo "| Semver tag | ${{ needs.setup.outputs.semver_tag }} |"  >> $GITHUB_STEP_SUMMARY
+      - name: "Release"
+        run: |
+          echo "### Release info" >> $GITHUB_STEP_SUMMARY
+          echo "| Variable | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "| --- | --- |"  >> $GITHUB_STEP_SUMMARY
+          echo "| tag | ${{ needs.setup.outputs.semver_tag }} |"  >> $GITHUB_STEP_SUMMARY
+          echo "| artifact | ${{ needs.release.outputs.artifact }} |"  >> $GITHUB_STEP_SUMMARY
