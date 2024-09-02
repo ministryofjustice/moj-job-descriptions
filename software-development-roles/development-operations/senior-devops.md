@@ -43,9 +43,9 @@ We’re recruiting for Senior DevOps Engineer here at Justice Digital, to join o
 
   - Cloud infrastructure: AWS
   - Infrastructure as code: Terraform
-  - Containerrsation: Docker
+  - Containerisation: Docker
   - CI/CD deployments: Github Actions
-  - Applicatio ncode: Go, Python, PHP, Javascript
+  - Application code: Go, Python, PHP, Javascript
 
 
 - **Learning and Support:**
