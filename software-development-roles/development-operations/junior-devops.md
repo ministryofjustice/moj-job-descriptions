@@ -125,8 +125,7 @@ Candidates must submit a CV and an optional Statement of Suitability (up to 750 
 
 In Justice Digital, we recruit using a combination of the Digital, Data and Technology Capability and Success Profiles Frameworks. We will assess your Experience, Technical Skills and the following Behaviours during the assessment process:
 
-- Communicating and influencing
-- Working Together
+- Delivering at Pace
 - Developing Self and Others
 - Making Effective Decisions
 
