@@ -39,7 +39,7 @@ DevOps supports the development and operation of software through tools, environ
 
 -   **Learning and Support:** Once part of our team, we'll support you in mastering our tech stack, regardless of your current experience. [Explore our GitHub](https://github.com/ministryofjustice) for insights into our technologies and the services we develop and maintain.
 
--   **Our Community:** Join over 150 experienced software and devops engineers who form our vibrant engineering community across the MoJ. You’ll have opportunities to mentor junior colleagues and participate in informal support networks with peers. We encourage active engagement in shaping our engineering culture and community.
+-   **Our Community:** Join over 350 experienced software and devops engineers who form our vibrant engineering community across the MoJ. You’ll have opportunities to mentor junior colleagues and participate in informal support networks with peers. We encourage active engagement in shaping our engineering culture and community.
 
 -   **Career Development:** We take pride in our supportive and effective line management. Your skills are highly valued, and we’re committed to helping you expand them within the civil service. You'll have opportunities to move between teams or departments, explore new technologies, and take on increased responsibilities aligned with your career goals.
 
@@ -103,13 +103,6 @@ As a Lead DevOps Engineer, you will:
 -   User focus - Identifies and engages with users or stakeholders to collate user needs evidence and understands and defines research which fits user needs. Able to use quantitative and qualitative data about users to turn user focus into outcomes.
 - Willingness to be assessed against [the requirements](https://www.gov.uk/government/publications/united-kingdom-security-vetting-clearance-levels/national-security-vetting-clearance-levels) for BPSS clearance
 
-### Desirable:
-
--   Availability and capacity management - Manages the service components to ensure they meet business needs and performance targets.
-    
--   Information security - Has an appreciation of information security, designing solutions and services with security controls embedded, specifically engineered as mitigation against security threats as core part of the solutions and services.
-
--   Prototyping - Sees prototyping as a team activity, actively soliciting prototypes and testing with others. Establishes design patterns and iterates them. Knows a variety of methods of prototyping and chooses the most appropriate ones.
 
 ## Benefits
 
