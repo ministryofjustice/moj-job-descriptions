@@ -3,7 +3,7 @@
 **Closing Date:** [Insert Date]
 **Interviews:** Expected w/c [Insert Week]
 
-**Grade:** SEO
+**Grade:** G7
 (MoJ candidates who are on a specialist grade will be able to retain this grade on lateral transfer)
 
 **Salary:**
