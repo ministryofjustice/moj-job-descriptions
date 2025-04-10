@@ -22,10 +22,10 @@ National: £[Insert Amount]
 
 **This role aligns against ‘[DevOps engineer](https://ddat-capability-framework.service.gov.uk/role/development-operations-devops-engineer)’ from the Government Digital and Data Framework**
 
-We’re recruiting for Junior DevOps Engineer here at Justice Digital, to join one of our dynamic and collaborative teams.
+We’re recruiting for a DevOps Engineer here at Justice Digital, to join one of our dynamic and collaborative teams.
 
 - **About Us:**
-  At Justice Digital, we're dedicated to leveraging technology to drive impactful change across the justice system. As a Junior DevOps Engineer, you'll play a pivotal role in enhancing access to justice and improving outcomes for offenders through innovative digital solutions.
+  At Justice Digital, we're dedicated to leveraging technology to drive impactful change across the justice system. As a DevOps Engineer, you'll play a pivotal role in enhancing access to justice and improving outcomes for offenders through innovative digital solutions.
 
 - **Responsibilities:**
   You’ll be working on our acclaimed open-source public services, with user needs at the heart of everything, helping us transform Government for the future. Working as part of a multi-disciplinary team, you’ll be helping to implement what we do, and making sure that our systems are built to be changed rapidly.
@@ -63,7 +63,7 @@ We’re recruiting for Junior DevOps Engineer here at Justice Digital, to join o
 
 ## Key Responsibilities:
 
-As a junior devops engineer, you will:
+As a devops engineer, you will:
 
 ### Technical:
 - Help build and run user-centred, open-source, secure web systems to serve a variety of citizen and government needs
@@ -72,8 +72,6 @@ As a junior devops engineer, you will:
 - Build tools to automate tasks
 - Contribute ideas to the wider team and help grow our DevOps community.
 - Contribute to a diverse, inclusive culture across the development community, growing awareness, inclusivity, and balance
-- Occasionally participate in 2nd line support during office hours, and sometimes out of hours (for which you’ll be paid an allowance and further hourly payment when on-call)
-
 
 ### People:
 - Share knowledge of tools and techniques with the wider team and community, both developers and non-developers, and maintain DevOps culture.
@@ -103,14 +101,13 @@ If this feels like an exciting opportunity, something you are enthusiastic about
 
 **You will have:**
 - A systematic approach to solving problems
-- Awareness of modern development and deployment techniques
-- Awareness of infrastructure as code principles
-- Experience working in a mixed skillset team
-- Awareness of version control technologies such as Git
 - Awareness of the use of containers and minimal operating systems
-- Awareness of cloud providers such as AWS, Azure, or Google Cloud
-- Awareness of data and application security
-- Interest in learning software development methodologies such as agile
+- Experience of modern development and deployment techniques
+- Experience of infrastructure as code tooling such as Terraform
+- Experience working in a mixed skillset team
+- Experience of version control technologies such as Git
+- Experience of cloud providers such as AWS, Azure, or Google Cloud
+- Experience of data and application security
 - Experience with a programming language such as PHP, Go, Python, Javascript, etc
 
 Willingness to be assessed against [the requirements](https://www.gov.uk/government/publications/united-kingdom-security-vetting-clearance-levels/national-security-vetting-clearance-levels) for BPSS clearance
@@ -125,6 +122,7 @@ Candidates must submit a CV and an optional Statement of Suitability (up to 750 
 
 In Justice Digital, we recruit using a combination of the Digital, Data and Technology Capability and Success Profiles Frameworks. We will assess your Experience, Technical Skills and the following Behaviours during the assessment process:
 
+- Communicating and influencing
 - Delivering at Pace
 - Developing Self and Others
 - Making Effective Decisions
