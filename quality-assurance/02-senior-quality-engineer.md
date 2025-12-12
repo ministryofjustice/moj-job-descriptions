@@ -155,7 +155,7 @@ The Civil Service is committed to attract, retain and invest in talent wherever 
 
 How to Apply
 
-Candidates must submit a CV and Coer Letter (750 words), which describes how you meet the requirements set out in the Person Specification above.
+Candidates must submit a CV and Cover Letter (750 words), which describes how you meet the requirements set out in the Person Specification above.
 
 In Justice Digital, we recruit using a combination of the [](https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework) [Government Digital and Data Profession Capability](https://www.gov.uk/government/collections/digital-data-and-technology-profession-capability-framework)  and [](https://www.gov.uk/government/publications/success-profiles) [Success Profiles](https://www.gov.uk/government/publications/success-profiles) Frameworks. We will assess your Experience, Technical Skills and the following Behaviours during the assessment process:
 
