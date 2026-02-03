@@ -97,10 +97,6 @@ https://github.com/ministryofjustice
 - Experience influencing engineering practice across multiple teams without direct line management  
 - Willingness to be assessed [against the requirements](https://www.gov.uk/government/publications/united-kingdom-security-vetting-clearance-levels/national-security-vetting-clearance-levels) for Security Check (SC)  
 
-### Desirable
-
-- Experience operating or contributing to an internal developer portal or similar developer-facing platform  
-
 ---
 
 ## Why join Justice Digital
@@ -132,17 +128,22 @@ This role offers the opportunity to operate at organisational scale, influence h
 
 ## How to Apply
 
-Candidates must submit a CV and a Supporting Statement (up to 750 words), which describes how you meet the requirements from the essential criteria, as set out in the Person Specification for this role.
+Candidates must submit a CV and a Supporting Statement (up to 750 words), which describes how you meet the requirements from the essential criteria set out below: 
+
+- Significant, recent hands-on experience working as a DevOps Engineer or Platform Engineer in modern software delivery environments
+- Experience influencing engineering practice across multiple teams without direct line management
+- Strong understanding of how engineers use Git-based workflows in practice, including pull requests, code review, CI/CD integration and release practices
+- Experience providing technical leadership across teams, including setting direction, reviewing approaches and supporting complex decision-making
 
 Please note, failure to provide both documents will result in a rejection of your application.
 
+Should we receive a high volume of applications, a pre-sift based on “Significant, recent hands-on experience working as a DevOps Engineer or Platform Engineer in modern software delivery environments” will be conducted before the sift.
+
 A diverse panel will review your application against the essential criteria.
 
-Successful candidates who meet the required standard will then be invited to a short virtual interview (30 minutes maximum).
+Successful candidates who meet the required standard will be invited to a 90-minute virtual panel interview, held over Microsoft Teams.
 
-Successful candidates who pass the first interview will be invited to a 1-hour virtual panel interview, held over Microsoft Teams.
-
-Details of both the first-stage and second-stage interviews will be shared with sufficient notice for candidates to prepare.
+Details of the interview will be shared with sufficient notice for candidates to prepare.
 
 ---
 
