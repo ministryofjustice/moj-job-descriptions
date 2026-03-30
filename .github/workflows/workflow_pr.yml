@@ -6,39 +6,17 @@ on:
       - main
 
 jobs:
-  # setup series of variables
-  setup:
-    name: "Setup"
-    runs-on: ubuntu-latest
-    outputs:
-      branch_name: ${{ steps.semver_tag.outputs.branch_safe }}
-      semver_tag: ${{ steps.semver_tag.outputs.created_tag }}
-    steps:
-      # Check the code base
-      - name: "Checkout"
-        id: checkout
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          fetch-tags: true
-      # Generate a semver tag for this workflow
-      - name: "Generate semver tag"
-        id: semver_tag
-        uses: ministryofjustice/opg-github-actions/.github/actions/semver-tag@v3.0.6
-        with:
-          prerelease: true
-          releases_enabled: false
-  # do the release
   release:
     name: "Create release"
-    needs: [setup]
     runs-on: ubuntu-latest
     outputs:
       artifact: ${{ steps.zip.outputs.artifact }}
+      branch_name: ${{ steps.semver_tag.outputs.branch }}
+      semver_tag: ${{ steps.semver_tag.outputs.tag }}
     steps:
-      - name: "Checkout"
-        id: checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+        with:
+            fetch-depth: "0"
       - name: "Zip descriptions"
         id: "zip"
         env:
@@ -48,22 +26,24 @@ jobs:
         run: |
           zip -vrX ${{ env.target }} ${{ env.source }} ${{ env.include }}
           echo "artifact=${{ env.target }}" >> $GITHUB_OUTPUT
-      - name: "Create a release"
-        id: create_release
-        uses: ncipollo/release-action@v1.13.0
+      - name: Upload Zip artifact
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
         with:
-          generateReleaseNotes: false
-          tag: ${{ needs.setup.outputs.semver_tag }}
-          name: ${{ needs.setup.outputs.semver_tag }}
-          draft: false
-          prerelease: true
-          artifacts: '${{ steps.zip.outputs.artifact }}'
+          name: descriptions
+          path: |
+            ./${{ steps.zip.outputs.artifact }}
+      - name: "Generate semver tag and release"
+        id: semver_tag
+        uses: ministryofjustice/opg-github-actions/actions/semver@b605e1e2c94b399e8139c4c2be2c8730700e0004
+        with:
+          create_release: false
+          prerelease: ${{ github.ref != 'refs/heads/main' }}
 
 
   end:
     name: "Workflow summary"
     if: always()
-    needs: [setup, release]
+    needs: [release]
     runs-on: ubuntu-latest
     steps:
       - name: "Git"
@@ -71,12 +51,12 @@ jobs:
           echo "### Git info" >> $GITHUB_STEP_SUMMARY
           echo "| Variable | Value |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |"  >> $GITHUB_STEP_SUMMARY
-          echo "| Branch | ${{ needs.setup.outputs.branch_name }} |"  >> $GITHUB_STEP_SUMMARY
-          echo "| Semver tag | ${{ needs.setup.outputs.semver_tag }} |"  >> $GITHUB_STEP_SUMMARY
+          echo "| Branch | ${{ needs.release.outputs.branch_name }} |"  >> $GITHUB_STEP_SUMMARY
+          echo "| Semver tag | ${{ needs.release.outputs.semver_tag }} |"  >> $GITHUB_STEP_SUMMARY
       - name: "Release"
         run: |
           echo "### Release info" >> $GITHUB_STEP_SUMMARY
           echo "| Variable | Value |" >> $GITHUB_STEP_SUMMARY
           echo "| --- | --- |"  >> $GITHUB_STEP_SUMMARY
-          echo "| tag | ${{ needs.setup.outputs.semver_tag }} |"  >> $GITHUB_STEP_SUMMARY
+          echo "| tag | ${{ needs.release.outputs.semver_tag }} |"  >> $GITHUB_STEP_SUMMARY
           echo "| artifact | ${{ needs.release.outputs.artifact }} |"  >> $GITHUB_STEP_SUMMARY
